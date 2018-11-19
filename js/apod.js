@@ -1,6 +1,10 @@
 function goToAPOD()
 {
-
+    var dateToSee = $('#date-data').val();
+    
+    var tempURL = "https://api.nasa.gov/planetary/apod?api_key=WbrraqAQYdck0uvrTEITvXo2zHy3wltYBTTgV58h&date=";
+    
+    var url = tempURL + dateToSee;
 
     $.ajax({
       url: url,
