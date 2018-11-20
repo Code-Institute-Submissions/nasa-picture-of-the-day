@@ -42,3 +42,9 @@ footer {
 img{
     border-radius: 6px;
 }
+
+#nothingToShow{
+    font-weight: 700;
+    text-align: center;
+    font-size: 22px;
+}

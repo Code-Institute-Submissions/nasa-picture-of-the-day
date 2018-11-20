@@ -5,7 +5,12 @@ function goToAPOD()
     var tempURL = "https://api.nasa.gov/planetary/apod?api_key=WbrraqAQYdck0uvrTEITvXo2zHy3wltYBTTgV58h&date=";
     
     var url = tempURL + dateToSee;
-
+    
+    var nothingToShow = document.getElementById("nothingToShow");
+    if(dateToSee){
+      nothingToShow.style.display = "none";
+    }
+  
     $.ajax({
       url: url,
       success: function(result){
