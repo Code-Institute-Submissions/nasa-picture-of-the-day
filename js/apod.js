@@ -1,3 +1,5 @@
+var $;
+
 function goToAPOD()
 {
     var dateToSee = $('#date-data').val();
